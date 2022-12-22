@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block title %} Explore-Filming {% endblock %}
+
+
+{% block head %}
+{% load static %}
+    {% comment %} <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> {% endcomment %}
+
+    <style>
+div.ui.col {
+    border-style:solid;
+    border-width:10px;
+}
+    </style>
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<main>
+
+  <section class="ui py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+
+        <h1 class="fw-light">FILMING</h1>
+        <p class="lead text-muted">CREATE YOUR OWN VISUAL STYLE… LET IT BE UNIQUE FOR YOURSELF AND YET IDENTIFIABLE TO OTHERS.</p>
+        <p>
+          {% comment %} <a href="#" class="btn btn-primary my-2">Add Your Video</a> {% endcomment %}
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+      <div class="ui three colunm centered grid" style="padding:20px; ">
+        <div class="ui col">
+          <div class="card shadow-sm">
+
+            <video width="320" height="240" controls>
+            <source src="{% static 'explore/1.mp4' %}">
+              </video>
+
+
+
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username1</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/2.mp4' %}">
+                </video>
+
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username2</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/3.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username3</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/5.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username4</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/6.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username5</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video  width="320" height="240" controls>
+              <source src="{% static 'explore/7.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username6</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/8.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username7</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/9.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username8</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui col" style="padding-bottom:20px;">
+          <div class="card shadow-sm">
+            <video width="320" height="240" controls>
+              <source src="{% static 'explore/4.mp4' %}">
+                </video>
+            <div class="card-body">
+              <button type="button" class="ui gray button" style="margin-right:200px;">Username9</button>
+              <p class="card-text">This is the sample video.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {% comment %} <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  
+
+</main>
+{% endblock %}
+
+{% block scripts %}
+    {% endblock scripts %}

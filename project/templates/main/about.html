@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% block title %} Team {% endblock %}
+
+
+{% block head %}
+{% load static %}
+<link href="{% static 'about.css' %}" rel="stylesheet" type="text/css">
+{% endblock head %}
+
+
+
+
+{% block content %}
+<!-- For demo purpose -->
+<div class="ui center aligned container">
+    <div class="row text-center text-white">
+        <div class="col-lg-8 p-3 p-md-5 mx-auto">
+            <h1 class="display-4"><b>OUR CREATIVE TEAM</b></h1>
+            <p class="lead mb-0">“Talent wins games, but teamwork and intelligence win championships.”</p>
+        </div>
+    </div>
+</div><!-- End -->
+
+<br>
+<br>
+<div class="ui four column grid">
+    <div class="row">
+
+        <!-- Team item -->
+        <div class=" column  " >
+            <div class="column"><img class="ui small circular image" src="{% static 'anjali.png'%}" alt="" width="100" height="100" ">
+                <h5 class="">Anjali Bhatt</h5>
+                <span class="small text-uppercase text-muted">CEO - Founder</span>
+
+                <div class="ui circular labels row" >
+                    <a style="color:black" href="#"> <i class="facebook icon"></i></a>
+                    <a style="color:black" href="#"> <i class="twitter icon"></i></a>
+                    <a style="color:black" href="#"> <i class="instagram icon"></i></a>
+                    <a style="color:black" href="#"><i class="linkedin icon"></i></a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="column">
+            <div class="column"><img class="ui small circular image" src="{% static 'shivani.jpg' %}" alt="" width="100"  >
+                <h5 class="mb-0">SHIVANI THOMBARE</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+
+                <div class="row">
+                    <a style="color:black" href="#"> <i class="facebook icon"></i></a>
+                   <a style="color:black" href="#"> <i class="twitter icon"></i></a>
+                   <a style="color:black" href="#"> <i class="instagram icon"></i></a>
+                    <a style="color:black" href="#"><i class="linkedin icon"></i></a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="column">
+            <div class="column"><img src="{% static 'aditi.jpg' %}" alt="" width="100" class="ui small circular image" >
+                <h5 class="mb-0">ADITI SHIRBATE</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+
+                <div class="row">
+                    <a style="color:black" href="#"> <i class="facebook icon"></i></a>
+                   <a style="color:black" href="#"> <i class="twitter icon"></i></a>
+                   <a style="color:black" href="#"> <i class="instagram icon"></i></a>
+                    <a style="color:black" href="#"><i class="linkedin icon"></i></a>
+                </div>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="column">
+            <div class="column"><img src="{% static 'viren.png' %}" alt="" width="100" class="ui small circular image">
+                <h5 class="mb-0">Viren Ghuikhedkar</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+
+                <div class="row">
+                    <a style="color:black" href="#"> <i class="facebook icon"></i></a>
+                   <a style="color:black" href="#"> <i class="twitter icon"></i></a>
+                   <a style="color:black" href="#"> <i class="instagram icon"></i></a>
+                    <a style="color:black" href="#"><i class="linkedin icon"></i></a>
+                </div>
+            </div>
+        </div><!-- End -->
+    </div>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+<!--<div class="container-fluid tm-mt-60">-->
+    <div class="ui three column grid ">
+        <div class="ui inverted column segment">
+            <div class="ui inverted form column">
+                <div class="field">
+                    <label> Name</label>
+                    <input placeholder="Name" type="text">
+                </div>
+                <div class="field">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="joe@schmoe.com">
+                </div>
+                <div class="field">
+                    <label>Leave your message here:</label>
+                    <textarea rows="15"></textarea>
+                </div>
+                <div class="field">
+                    <label>Message Type:</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="message-type">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Message Type</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">Complaint</div>
+                            <div class="item" data-value="0">Query</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui submit button">Submit</div>
+            </div>
+        </div>
+        <div class="ui inverted column " style="padding-top:360px;">
+            <div class="tm-address-col">
+                <h2 class="tm-text-primary mb-5">Our Address</h2>
+                <p class="tm-mb-50">Railway station, Solapur - Pune Hwy, near Bharat Petrol Pump, Loni Kalbhor, Maharashtra 412201</p>
+                <p class="tm-mb-50">Loni Kalbhor, Maharashtra 412201</p>
+                <address class="tm-text-gray tm-mb-50">
+                    Railway station, Solapur - Pune Hwy, near Bharat Petrol Pump,<br>
+                    Loni Kalbhor, Maharashtra 412201
+                </address>
+                <ul class="tm-contacts">
+                    <li>
+                        <a href="#" class="tm-text-gray">
+                            <i class="fas fa-envelope"></i>
+                            Email: atelier04@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tm-text-gray">
+                            <i class="fas fa-phone"></i>
+                            Tel: 010-020-0340
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tm-text-gray">
+                            <i class="fas fa-globe"></i>
+                            URL: www.atelier.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui inverted column segment">
+            <h2 class="tm-text-primary mb-5">Our Location</h2>
+            <!-- Map -->
+            <div class="mapouter mb-4">
+                <div class="gmap-canvas">
+                    <iframe width="100%" height="500" id="gmap-canvas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30250.335124089146!2d73.76691905!3d18.605936500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e805e62101f9%3A0x20beded1f9debf8d!2sMIT%20ADT%20University!5e0!3m2!1sen!2sin!4v1604565657114!5m2!1sen!2sin"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+<br>
+<br>
+<hr>
+<br>
+<br>
+<footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+    <div class="container-fluid tm-container-small">
+        <div class="ui two column grid">
+            <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                <h3 class="tm-text-primary mb-4 tm-footer-title">About Bloomverse</h3>
+                <p>A website that is aming to :<br>
+                    1)Nearly, 20 million tons of floral waste are generated every day - We aim to reduce flower waste <br>
+                    2)More than 15 billion trees are lost annually to deforestation. - Our objective is to increase the rate of tree plantation <br>
+                    3)Promote eco-friendly products
+
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                <ul class="tm-footer-links pl-0">
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                ©Copyright 2020. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
+
+
+

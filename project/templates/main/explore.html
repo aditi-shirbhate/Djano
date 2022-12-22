@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Explore
+{% endblock title %}
+
+
+{% block head %}
+{% load static %}
+        <link href="{% static 'explore.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="ui three colunm grid centered  ">
+			<div class="box ">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?art,painting" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>ART</h2>
+					<p>Element to happiness.</p>
+					<a href="{% url 'art-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?dance" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>DANCE</h2>
+					<p>“Hidden language of the soul.”</p>
+					<a href="{% url 'dance-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?food" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>FOOD</h2>
+					<p>“I brought food.”</p>
+					<a href="{% url 'food-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?singing" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>MUSIC</h2>
+					<p>Music is the language of the spirit.</p>
+					<a href="{% url 'music-view' %}">See More</a> 
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?photography" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>PHOTOGRAPHY</h2>
+					<p>The humanity of the moment</p>
+					 <a href="{% url 'photography-view' %}">See More</a> 
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?poetry" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>POETRY</h2>
+					<p>The Rhythmical Creation of Beauty.</p>
+					<a href="{% url 'poetry-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?craft" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>CRAFT</h2>
+					<p>Creative minds are rearely tidy.</p>
+					<a href="{% url 'craft-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?fashion" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>FASHION</h2>
+					<p>The difference between style and fashion is quality.</p>
+					<a href="{% url 'fashion-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?illustration" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>ILLUSTRATIONS</h2>
+					<p>My life will be the best illustration of all my work.</p>
+					<a href="{% url 'illustration-view' %}">See More</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="https://source.unsplash.com/300x300/?film" width="300" height="300">
+				</div>
+				<div class="content">
+					<h2>FLIMING</h2>
+					<p>If it can be written or thought,It can be flimed.</p>
+					<a href="{% url 'filming-view' %}">See More</a> 
+				</div>
+			</div>
+		</div>
+{% endblock content %}
+
+
+
+{% block scripts %}
+
+{% endblock scripts %}

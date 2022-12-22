@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<h1><p style="text-align:center;">BLOOMVERSE UPDATES!!</p></h1><br>
+<h2><p style="text-align:center;">All the updates you need to know will be given here ...</p></h2>
+<hr>
+
+<div class="ui three column grid">
+
+  <div class="column">
+    <div class="ui segment">
+      <img class="ui large  image" src="{% static 'explore/home/waste.jpeg/' %}">
+
+      <div class="content">
+        <p class="header" style="text-align:center;"><b>Flower Waste</b></p>
+        <div class="meta">
+          <a class="description" style="color:black;">Floral waste is one of the major concern. Flowers have applications in many industries viz; perfumes, cosmetics, food, liquor and textile industries. Disposal of flowers in rivers, oceans, etc. leads to water pollution as well as affects the living organisms present in the waters</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="ui segment">
+      <img class="ui large  image" src="{% static 'explore/home/1-indian-entrepreneurs-turning-religious-flower-waste.webp' %}">
+
+      <div class="content">
+        <p class="header" style="text-align:center;"><b>Innovation</b></p>
+        <div class="meta">
+          <a class="description" style="color:black;">When Agarwal and his partner and childhood friend Karan Rastogi first proposed finding alternative uses for the waste, they met a lot of resistance. The temples thought the young men wouldn’t treat the flowers with the required reverence, or that there couldn’t possibly be a business in flower recycling. Two years on, they’ve proved the naysayers wrong. Agarwal and Rastogi have a thriving company called Helpusgreen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="ui segment">
+      <img class="ui large image" src="{% static 'explore/home/diy-swachh-bharat-abhiyan-3.jpg' %}">
+
+      <div class="content">
+        <p class="header" style="text-align:center;"><b>Here’s How You Can Treat Flower Waste</b></p>
+        <div class="meta">
+          <a style="color:black;" class="description">Pressed flowers create a beautiful home décor piece. Just arranged the flowers in a beautiful pattern and you will be ready to redefine your home space. All you will need is a sheet of colourful paper or white paper along with a cardboard and a design to create this masterpiece. Make sure you dry the art piece completely, once done you can frame it up!
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock content %}
+
+{% block scripts %}
+
+<script>
+{% comment %} $(document).ready(function(){
+    console.log('working')
+}) {% endcomment %}
+
+document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Welcome to Bloomverse.", "Bloomverse updates!!", ];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+</script>
+
+{% endblock scripts %}

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Shop{% endblock title %}
+
+
+
+{% block content %}
+{% load static %}
+
+
+
+<div class="ui three column centered grid">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+
+                    <h1 class="title mb-4">BLOOMVERSE SHOP !!!</h1>
+                    <h3><p class="text-muted para-desc mx-auto mb-0">Treat yourself!</p></h3>
+
+
+                </div>
+            </div>
+</div>
+
+
+<div class="ui three column centered grid">
+
+
+    <div class="col">
+<br>
+<hr>
+                    <h4 class="title mb-4">Want to sell your products here ?<br>Email us at :<br></h4>
+                    <a ><h2>bloomverse04@gmail.com</h2></a>
+<hr>
+</div>
+</div>
+
+<div class="ui three column grid">
+  {% for obj in products %}
+  <div class="column">
+    <div class="ui card segment" width="300px" height="300px">
+        <div class="ui fluid image">
+          <img src="{{obj.image.url}}"> 
+        </div>
+        <div class="content">
+          <div class="header"><b>Title-</b>{{obj.title}}</div>
+          <div class="description">
+            Price- ₹{{obj.price}} 
+          </div>
+        </div>
+        <div class="extra content">
+            <div class="ui floating message info">
+            <p>Mail : {{obj.contact}}
+            </p>
+            </div>
+        </div>
+      </div>
+  </div>
+{% endfor %}
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+  
+{% endblock scripts %}
